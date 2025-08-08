@@ -4,8 +4,8 @@ namespace Infrastructure.Interfaces;
 
 public interface IAuthorServices
 {
-    bool AddAuthor(Author author);
+    void AddAuthor(Author author);
     List<Author> GetAllAuthors();
-    bool UpdateAuthor( int id,Author author);
-    bool DeleteAuthor(int id);
+    void UpdateAuthor( int id,Author author);
+    void DeleteAuthor(int id);
 }
